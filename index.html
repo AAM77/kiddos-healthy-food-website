@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Eating is Fun!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 
+    ==============================================
+    CLASS ACTIVITY INSTRUCTIONS
+    ==============================================
+    To add a new fruit or vegetable card:
+
+    1. Uncomment one of the template cards below
+    2. Update the following in the card:
+       - Change the title (h3 tag)
+       - Add your image to images folder
+       - Update image source and alt text
+       - Write your description
+
+    3. To add animations:
+       In script.js, find INDIVIDUAL_ANIMATIONS and add:
+       'your-item-id': 'hop',    // To make it hop
+       'your-item-id': 'spin',   // To make it spin
+       'your-item-id': 'none',   // For no animation
+
+    Example:
+    If you named your fruit "dragon-fruit":
+    - Update data-item-id="dragon-fruit"
+    - Add 'dragon-fruit': 'hop' to INDIVIDUAL_ANIMATIONS
+    -->
+
+    <div class="container">
+        <header>
+            <h1>Why Eating Healthy is Important! ⭐</h1>
+            <div class="intro">
+                <p>Welcome to our amazing journey of healthy eating! Did you know that eating healthy foods helps us grow strong, think better, and have more energy to play and learn? It's like giving our body the best fuel to run smoothly!</p>
+                <p>When we eat healthy foods, we:</p>
+                <ul>
+                    <li>Grow tall and strong 💪</li>
+                    <li>Have energy to play all day long 🎈</li>
+                    <li>Can think better at school 📚</li>
+                    <li>Have healthy teeth and bright smiles ⭐</li>
+                    <li>Feel happy and energetic ✨</li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="fruits-section">
+            <h2>Fantastic Fruits! 🍎</h2>
+            <div class="cards-container">
+                <!-- First three fruit cards remain visible -->
+                <div class="card-wrapper" data-item-id="orange">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Orange</h3>
+                            <img src="images/orange.png" alt="Orange" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Oranges are round, juicy fruits full of vitamin C! They have a bright, sunny color and sweet-tangy taste. Each orange has a special peel that protects the juicy segments inside!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/orange.png" alt="Orange" class="clickable-image">
+                    </div>
+                </div>
+
+                <div class="card-wrapper" data-item-id="watermelon">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Watermelon</h3>
+                            <img src="images/watermelon.png" alt="Watermelon" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Watermelons are nature's summer treat! They're super juicy and refreshing, filled with sweet red flesh and fun black seeds. One slice can make you feel cool on a hot day!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/watermelon.png" alt="Watermelon" class="clickable-image">
+                    </div>
+                </div>
+
+                <div class="card-wrapper" data-item-id="strawberry">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>strawberry</h3>
+                            <img src="images/strawberry.png" alt="strawberry" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Strawberries are sweet little treasures! They have tiny yellow seeds on their bright red skin and a heart-like shape. They're packed with vitamins that help keep you healthy!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/strawberry.png" alt="strawberry" class="clickable-image">
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- FOURTH FRUIT CARD - COMMENTED OUT FOR CLASS  -->
+                <!-- ============================================ -->
+                <!--
+                <div class="card-wrapper" data-item-id="rainbow-fruit">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Rainbow Fruit</h3>
+                            <img src="images/mockfruit1.png" alt="Rainbow Fruit" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>The magical Rainbow Fruit changes color with the sunshine! It tastes like your favorite fruit and helps you dream happy dreams. Every bite makes you smile bigger!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/mockfruit1.png" alt="Rainbow Fruit" class="clickable-image">
+                    </div>
+                </div>
+                -->
+                <!-- ============================================ -->
+                <!-- END FOURTH FRUIT CARD                        -->
+                <!-- ============================================ -->
+
+                <!-- ============================================ -->
+                <!-- FIFTH FRUIT CARD - TEMPLATE FOR CLASS       -->
+                <!-- ============================================ -->
+                <!--
+                <div class="card-wrapper" data-item-id="new-fruit">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>New Fruit Name</h3>
+                            <img src="images/your-fruit-image.png" alt="Your Fruit" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Write your fun description here! Make it exciting and kid-friendly!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/your-fruit-image.png" alt="Your Fruit" class="clickable-image">
+                    </div>
+                </div>
+                -->
+                <!-- ============================================ -->
+                <!-- END FIFTH FRUIT CARD                         -->
+                <!-- ============================================ -->
+            </div>
+        </section>
+
+        <section class="vegetables-section">
+            <h2>Vibrant Vegetables! 🥕</h2>
+            <div class="cards-container">
+                <!-- First three vegetable cards remain visible -->
+                <div class="card-wrapper" data-item-id="carrot">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Carrot</h3>
+                            <img src="images/carrot.png" alt="Carrot" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Carrots are crunchy orange vegetables that grow underground! They're full of vitamin A that helps your eyes stay strong. Their green tops tell us when they're ready to pick!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/carrot.png" alt="Carrot" class="clickable-image">
+                    </div>
+                </div>
+
+                <div class="card-wrapper" data-item-id="broccoli">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Broccoli</h3>
+                            <img src="images/broccoli.png" alt="Broccoli" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Broccoli looks like tiny green trees! It's a super vegetable packed with nutrients that help you grow strong. Each little floret is like a bouquet of goodness!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/broccoli.png" alt="Broccoli" class="clickable-image">
+                    </div>
+                </div>
+
+                <div class="card-wrapper" data-item-id="bell-pepper">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Bell Peppers</h3>
+                            <img src="images/bell-pepper.png" alt="Bell Peppers" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Bell peppers come in beautiful colors like red and yellow! They're crunchy, sweet, and full of vitamin C. Each color has its own special taste!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/bell-pepper.png" alt="Bell Peppers" class="clickable-image">
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- FOURTH VEGETABLE CARD - COMMENTED OUT        -->
+                <!-- ============================================ -->
+                <!--
+                <div class="card-wrapper" data-item-id="rainbow-beans">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>Rainbow Beans</h3>
+                            <img src="images/mockveggie1.png" alt="Rainbow Beans" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Rainbow Beans bounce with happiness! They're filled with special nutrients that give you rainbow energy. Each bean is a different color of the rainbow!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/mockveggie1.png" alt="Rainbow Beans" class="clickable-image">
+                    </div>
+                </div>
+                -->
+                <!-- ============================================ -->
+                <!-- END FOURTH VEGETABLE CARD                    -->
+                <!-- ============================================ -->
+
+                <!-- ============================================ -->
+                <!-- FIFTH VEGETABLE CARD - TEMPLATE FOR CLASS   -->
+                <!-- ============================================ -->
+                <!--
+                <div class="card-wrapper" data-item-id="new-vegetable">
+                    <div class="card">
+                        <div class="card-front">
+                            <h3>New Vegetable Name</h3>
+                            <img src="images/your-vegetable-image.png" alt="Your Vegetable" class="card-image">
+                        </div>
+                        <div class="card-back">
+                            <p>Write your fun description here! Make it exciting and kid-friendly!</p>
+                        </div>
+                    </div>
+                    <div class="animation-image">
+                        <img src="images/your-vegetable-image.png" alt="Your Vegetable" class="clickable-image">
+                    </div>
+                </div>
+                -->
+                <!-- ============================================ -->
+                <!-- END FIFTH VEGETABLE CARD                     -->
+                <!-- ============================================ -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
